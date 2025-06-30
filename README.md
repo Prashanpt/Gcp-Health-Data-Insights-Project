@@ -6,6 +6,19 @@
 
 This project focuses on processing patient health data, including vital signs such as heart rate, blood pressure, and body temperature, to generate meaningful insights for proactive monitoring. Leveraging Google Cloud Dataproc and PySpark, the pipeline ingests, transforms, and analyzes streaming health metrics at scale. The final insights are stored in BigQuery for reporting, visualization, and anomaly detection in patient vitals — enabling better clinical decision-making and health outcome tracking.
 
+Below are some more details :
+ 
+
+Objective: Build a scalable, real-time data pipeline for validating, transforming, and analyzing patient data, then storing results in BigQuery. <br>
+Data Source: JSON files containing patient data streamed from Google Cloud Storage (GCS). <br>
+Data Validation: Validate incoming records (heart rate, blood pressure, temperature) to ensure data quality and filter out invalid data. <br>
+Data Transformation: Calculate average and standard deviation metrics, detect abnormal trends using moving windows, and categorize patients based on risk levels. <br>
+Architecture: GCS (raw data) → Dataproc (processing) → BigQuery (storage). <br>
+Logging & Monitoring: Use Google Cloud Logging for tracking pipeline steps, errors, and performance. <br>
+Error Handling: Capture and log exceptions to ensure robust pipeline operation and to easily debug issues. <br>
+Output: Write transformed and validated data, along with patient risk categorization, to BigQuery for further analysis. <br>
+Business Value: Enables real-time monitoring of patient health metrics, aids in detecting critical trends, and supports healthcare providers with actionable insights. <br>
+
 ---
 
 ## 🛠️ Tech Stack
