@@ -1,26 +1,25 @@
 
-### ✅ **README Template for GCP Health Insights Project**
+### ✅   GCP Health Insights Project
 
-```markdown
-# 🩺 Health Insights Project - GCP Data Pipeline
 
 ## 📌 Project Overview
 
-This project aims to generate **health insights** by processing and analyzing patient-level data using a scalable and serverless architecture on **Google Cloud Platform (GCP)**. The data flows through multiple GCP services — from ingestion to final reporting in BigQuery — to enable actionable analytics.
+This project focuses on processing patient health data, including vital signs such as heart rate, blood pressure, and body temperature, to generate meaningful insights for proactive monitoring. Leveraging Google Cloud Dataproc and PySpark, the pipeline ingests, transforms, and analyzes streaming health metrics at scale. The final insights are stored in BigQuery for reporting, visualization, and anomaly detection in patient vitals — enabling better clinical decision-making and health outcome tracking.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Google Cloud Storage (GCS)** – Raw data staging & temporary processing outputs
-- **Dataproc (PySpark on Hadoop/YARN)** – Distributed data transformation and standard deviation computation
-- **BigQuery** – Final data warehouse for visualization and BI reporting
+- **Dataproc (PySpark on Hadoop/YARN)** – Distributed data computation.
+- **BigQuery** – Final data warehouse for visualization.
 
 ---
 
 ## 🔄 Data Pipeline Flow
 
-![image](https://github.com/user-attachments/assets/44aa5eab-446d-486f-9106-86b5cbad622e)
+![image](https://github.com/user-attachments/assets/bee1298e-b27a-438f-8f03-351958f6e65e)
+
 
 
 ---
@@ -32,9 +31,8 @@ This project aims to generate **health insights** by processing and analyzing pa
 health-insights/
 │
 ├── README.md                ← Project documentation
-├── main\_pipeline.py         ← Main PySpark code for Dataproc job
-├── sample\_data/             ← Optional: sample input data
-└── output/                  ← Output files (e.g., transformed JSON, logs)
+├── pipeline.py         ← Main PySpark code for Dataproc job
+├── Input_data/Health_data.json            ←  input data [ Json File ]
 
 ````
 
