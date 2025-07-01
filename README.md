@@ -41,36 +41,16 @@ Business Value: Enables real-time monitoring of patient health metrics, aids in 
 
 ![image](https://github.com/user-attachments/assets/bee1298e-b27a-438f-8f03-351958f6e65e)
 
----
-
-
-## 📌 GCP Resources
-
-| Resource | Name/Link |
-|----------|-----------|
-| GCS Bucket | `gs://your-bucket-name/health-insights/` |
-| Dataproc Cluster | `health-insights-cluster` (Region: `us-central1`) |
-| BigQuery Table | `your_project.health_dataset.final_insights` |
 
 ---
 
-## 🚀 How to Run
+## 6) All steps in detail
 
-### 🔁 Step 1: Upload input data to GCS
-```bash
-gsutil cp local_file.csv gs://your-bucket-name/health-insights/input/
-````
+###  Step 1: Upload input data to GCS.
 
-### 🔁 Step 2: Submit the PySpark job to Dataproc
+###  Step 2: Submit the PySpark job to Dataproc.
 
-```bash
-gcloud dataproc jobs submit pyspark main_pipeline.py \
-    --cluster=health-insights-cluster \
-    --region=us-central1 \
-    --jars=gs://spark-lib/bigquery/spark-bigquery-latest.jar
-```
-
-### 🔁 Step 3: Verify in BigQuery
+###  Step 3: Verify in BigQuery.
 
 Go to BigQuery and query:
 
@@ -80,35 +60,15 @@ SELECT * FROM `your_project.health_dataset.final_insights`
 
 ---
 
-## 📊 Example Use Case
+## Biquery Output
 
-Compute standard deviation of lab test results per patient and flag anomalies:
-
-* Patients with unusually high/low test results
-* Time-series trends for health monitoring
+![Output](https://github.com/user-attachments/assets/86f7471e-9e45-48f3-8b32-c6a14268eef7)
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Prashant Tripathi**
-*Data Analyst & Cloud Enthusiast*
-📧 [prashant@example.com](mailto:prashant@example.com)
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)
+📧 [prashanttripathi2k24@gmail.com](mailto:prashanttripathi2k24@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/prashanttripathi786/)
 
----
-
-## 📃 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
----
-
-### 📝 Tips:
-- Replace placeholders like `your_project`, `your-bucket-name`, `your-profile` with your actual project details.
-- You can add badges (like GCP, PySpark, BigQuery) at the top if you're uploading to GitHub.
-
-Let me know if you'd like me to generate a logo, add GitHub Actions for CI/CD, or include a `.json` schema validator example!
-```
