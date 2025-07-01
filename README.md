@@ -1,12 +1,14 @@
 
-### ✅   GCP Health Insights Project
+# GCP Health Insights Project
 
 
-## 📌 Project Overview
+## 1) Project Overview :
 
-This project focuses on processing patient health data, including vital signs such as heart rate, blood pressure, and body temperature, to generate meaningful insights for proactive monitoring. Leveraging Google Cloud Dataproc and PySpark, the pipeline ingests, transforms, and analyzes streaming health metrics at scale. The final insights are stored in BigQuery for reporting, visualization, and anomaly detection in patient vitals — enabling better clinical decision-making and health outcome tracking.
+This project focuses on processing patient health data, including vital signs such as heart rate, blood pressure, and body temperature, to generate meaningful insights for proactive monitoring. Leveraging Google Cloud Dataproc and PySpark, the pipeline ingests, transforms, and analyzes  health metrics at scale. The final insights are stored in BigQuery for reporting, visualization, and anomaly detection in patient vitals — enabling better clinical decision-making and health outcome tracking.
 
-Below are some more details :
+---
+
+## 2) Project Details :
  
 
 Objective: Build a scalable, real-time data pipeline for validating, transforming, and analyzing patient data, then storing results in BigQuery. <br>
@@ -21,7 +23,7 @@ Business Value: Enables real-time monitoring of patient health metrics, aids in 
 
 ---
 
-## 🛠️ Tech Stack
+## 3) Tech Stack
 
 - **Google Cloud Storage (GCS)** – Raw data staging & temporary processing outputs
 - **Dataproc (PySpark on Hadoop/YARN)** – Distributed data computation.
@@ -29,38 +31,18 @@ Business Value: Enables real-time monitoring of patient health metrics, aids in 
 
 ---
 
-## 🔄 Data Pipeline Flow
+## 4) Sample Data [ Json File ]
+
+![image](https://github.com/user-attachments/assets/2fccf8b6-6185-4a52-b102-332a2465bac1)
+
+---
+
+## 5) Data Pipeline Flow
 
 ![image](https://github.com/user-attachments/assets/bee1298e-b27a-438f-8f03-351958f6e65e)
 
-
-
 ---
 
-## 📂 Project Structure
-
-```
-
-health-insights/
-│
-├── README.md                ← Project documentation
-├── pipeline.py         ← Main PySpark code for Dataproc job
-├── Input_data/Health_data.json            ←  input data [ Json File ]
-
-````
-
----
-
-## 📄 File Description
-
-| File | Description |
-|------|-------------|
-| `main_pipeline.py` | Core PySpark script used in Dataproc to read from GCS, process data, compute aggregations and standard deviations, and write the result to BigQuery |
-| `README.md` | Documentation for understanding and running the project |
-| `sample_data/` | Contains mock or real input data used in the pipeline |
-| `output/` | Holds intermediate output for validation or debugging |
-
----
 
 ## 📌 GCP Resources
 
