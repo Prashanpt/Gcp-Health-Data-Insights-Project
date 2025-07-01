@@ -31,9 +31,10 @@ Business Value: Enables real-time monitoring of patient health metrics, aids in 
 
 ---
 
-## 4) Sample Data [ Json File ]
+## 4) Sample Patient Data [ Json File ]
 
-![image](https://github.com/user-attachments/assets/2fccf8b6-6185-4a52-b102-332a2465bac1)
+![image](https://github.com/user-attachments/assets/81f1b5a1-e3b5-400d-a242-a874a39bd1de)
+
 
 ---
 
